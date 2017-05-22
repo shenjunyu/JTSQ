@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="MLDSService.Business" CodeBehind="Business.svc.cs" Factory="System.ServiceModel.Activation.WebServiceHostFactory" %>

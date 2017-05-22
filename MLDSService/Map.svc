@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="MLDSService.Map" CodeBehind="Map.svc.cs" Factory="System.ServiceModel.Activation.WebServiceHostFactory" %>
