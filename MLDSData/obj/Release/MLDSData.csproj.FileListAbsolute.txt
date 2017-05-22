@@ -1,0 +1,6 @@
+D:\Projects\MLDS\MLDSData\bin\Release\MLDSData.dll.config
+D:\Projects\MLDS\MLDSData\bin\Release\MLDSData.dll
+D:\Projects\MLDS\MLDSData\bin\Release\MLDSData.pdb
+D:\Projects\MLDS\MLDSData\obj\Release\MLDSData.dll
+D:\Projects\MLDS\MLDSData\obj\Release\MLDSData.pdb
+D:\Projects\MLDS\MLDSData\obj\Release\MLDSData.csprojResolveAssemblyReference.cache
