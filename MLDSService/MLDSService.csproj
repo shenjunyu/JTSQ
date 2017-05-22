@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4890B640-87F0-4BAB-A466-FD06F49D9EB2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MLDSService</RootNamespace>
+    <AssemblyName>MLDSService</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="cn.jpush.api, Version=1.1.1.38529, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\JTZH\Desktop\cn.jpush.api.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\MLDS\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\MLDS\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\MLDS\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\MLDS\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\MLDS\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\MLDS\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\MLDS\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="NPOI">
+      <HintPath>C:\Users\JTZH\Desktop\Release\Net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>C:\Users\JTZH\Desktop\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Context" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assistant.svc" />
+    <Content Include="Business.svc" />
+    <Content Include="Map.svc" />
+    <Content Include="Population.svc" />
+    <Content Include="Dynamic.svc" />
+    <Content Include="Agriculture.svc" />
+    <Content Include="System.svc" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assistant.svc.cs">
+      <DependentUpon>Assistant.svc</DependentUpon>
+    </Compile>
+    <Compile Include="DataContracts\Analysis\BUS_ChildrenInsurance_10.cs" />
+    <Compile Include="DataContracts\Analysis\BUS_Information_10.cs" />
+    <Compile Include="DataContracts\Analysis\BUS_Meeting_10.cs" />
+    <Compile Include="DataContracts\Analysis\BUS_RuralInsurance_10.cs" />
+    <Compile Include="DataContracts\Analysis\DYNC_ActivityList_10.cs" />
+    <Compile Include="DataContracts\Analysis\DYNC_Information_10.cs" />
+    <Compile Include="DataContracts\Analysis\DYNC_InitiativeCheck_10.cs" />
+    <Compile Include="DataContracts\Analysis\DYNC_PeopleCaring_10.cs" />
+    <Compile Include="DataContracts\Analysis\DYNC_PhotoTake_10.cs" />
+    <Compile Include="DataContracts\Analysis\DYNC_Suggestion_10.cs" />
+    <Compile Include="DataContracts\App_Suggestion_Answer.cs" />
+    <Compile Include="DataContracts\App_Suggestion.cs" />
+    <Compile Include="DataContracts\App_Activity.cs" />
+    <Compile Include="DataContracts\App_Appointment_Answer.cs" />
+    <Compile Include="DataContracts\App_PhotoTake-Answer.cs" />
+    <Compile Include="DataContracts\Appointment_Detail_Answer.cs" />
+    <Compile Include="DataContracts\App_Activity-Image.cs" />
+    <Compile Include="DataContracts\App_Activity-Participator.cs" />
+    <Compile Include="DataContracts\App_Appointment.cs" />
+    <Compile Include="DataContracts\CommonOutputT_M.cs" />
+    <Compile Include="DataContracts\Excel_ChildrenInsurance.cs" />
+    <Compile Include="DataContracts\Excel_Disabled.cs" />
+    <Compile Include="DataContracts\Excel_FitBuilding.cs" />
+    <Compile Include="DataContracts\Excel_FarmLand.cs" />
+    <Compile Include="DataContracts\Excel_Leader.cs" />
+    <Compile Include="DataContracts\Excel_Military.cs" />
+    <Compile Include="DataContracts\Excel_PartyMember.cs" />
+    <Compile Include="DataContracts\Excel_RuralInsurance.cs" />
+    <Compile Include="DataContracts\List_Index_Meeting.cs" />
+    <Compile Include="DataContracts\List_Index_InternalInformation.cs" />
+    <Compile Include="DataContracts\List_Disable.cs" />
+    <Compile Include="DataContracts\List_Farm-Product-Value.cs" />
+    <Compile Include="DataContracts\List_InitiativeCheck_Image.cs" />
+    <Compile Include="DataContracts\List_InitiativeCheck.cs" />
+    <Compile Include="DataContracts\List_Farm-Product.cs" />
+    <Compile Include="DataContracts\List_Farm.cs" />
+    <Compile Include="DataContracts\List_Activity.cs" />
+    <Compile Include="DataContracts\List_PeopleCaring.cs" />
+    <Compile Include="DataContracts\List_FarmLand.cs" />
+    <Compile Include="DataContracts\List_Product.cs" />
+    <Compile Include="DataContracts\List_Role.cs" />
+    <Compile Include="DataContracts\Map_Expert.cs" />
+    <Compile Include="DataContracts\Map_HouseMember-FarmLand.cs" />
+    <Compile Include="DataContracts\Map_FarmLand.cs" />
+    <Compile Include="DataContracts\Map_Farm_Product_Year_Value.cs" />
+    <Compile Include="DataContracts\Map_Farm_Product_Year.cs" />
+    <Compile Include="DataContracts\Map_Farm_Product.cs" />
+    <Compile Include="DataContracts\Map_PopulationSearchBygetDisabled.cs" />
+    <Compile Include="DataContracts\Map_PopulationSearchBygetElderly.cs" />
+    <Compile Include="DataContracts\Map_Farm.cs" />
+    <Compile Include="DataContracts\Map_Product_Area.cs" />
+    <Compile Include="DataContracts\Map_District-Area.cs" />
+    <Compile Include="DataContracts\Map_PopulationSearchByLeader.cs" />
+    <Compile Include="DataContracts\Map_PopulationSearchByParty.cs" />
+    <Compile Include="DataContracts\Map_District.cs" />
+    <Compile Include="DataContracts\Activity_Detail.cs" />
+    <Compile Include="DataContracts\Activity_Detail_Participator.cs" />
+    <Compile Include="DataContracts\List_User.cs" />
+    <Compile Include="DataContracts\Map_Farm_Image.cs" />
+    <Compile Include="DataContracts\System_UserInformation.cs" />
+    <Compile Include="DataContracts\Suggestion_Detail_Answer.cs" />
+    <Compile Include="DataContracts\Suggestion_Detail.cs" />
+    <Compile Include="DataContracts\PhotoTake_Detail_Comment.cs" />
+    <Compile Include="DataContracts\App_PhotoTake-Comment.cs" />
+    <Compile Include="DataContracts\App_PhotoTake-Image.cs" />
+    <Compile Include="DataContracts\App_PhotoTake.cs" />
+    <Compile Include="DataContracts\App_ClientInformation.cs" />
+    <Compile Include="DataContracts\App_ServiceType.cs" />
+    <Compile Include="DataContracts\App_BusinessType.cs" />
+    <Compile Include="DataContracts\App_Information.cs" />
+    <Compile Include="DataContracts\CommonMapPoint.cs" />
+    <Compile Include="DataContracts\CommonOutputApp.cs" />
+    <Compile Include="DataContracts\CommonOutputAppT.cs" />
+    <Compile Include="DataContracts\Excel_Building.cs" />
+    <Compile Include="DataContracts\Excel_Population.cs" />
+    <Compile Include="DataContracts\App_Login.cs" />
+    <Compile Include="DataContracts\Map_PopulationSearch.cs" />
+    <Compile Include="DataContracts\Map_HouseMember.cs" />
+    <Compile Include="DataContracts\Map_Family.cs" />
+    <Compile Include="DataContracts\Map_ZoomNum.cs" />
+    <Compile Include="DataContracts\List_AddressList.cs" />
+    <Compile Include="DataContracts\List_RuralInsurance.cs" />
+    <Compile Include="DataContracts\List_ChildrenInsurance.cs" />
+    <Compile Include="DataContracts\List_IllegalBuilding.cs" />
+    <Compile Include="DataContracts\List_Business.cs" />
+    <Compile Include="DataContracts\List_Feedback.cs" />
+    <Compile Include="DataContracts\List_Suggestion.cs" />
+    <Compile Include="DataContracts\List_Military.cs" />
+    <Compile Include="DataContracts\List_Leader.cs" />
+    <Compile Include="DataContracts\List_PartyMember.cs" />
+    <Compile Include="DataContracts\List_FamilyMember.cs" />
+    <Compile Include="DataContracts\List_Family.cs" />
+    <Compile Include="DataContracts\List_BasicPopulation.cs" />
+    <Compile Include="DataContracts\List_Appointment.cs" />
+    <Compile Include="DataContracts\PhotoTake_Detail_Answer.cs" />
+    <Compile Include="DataContracts\PhotoTake_Detail_Image.cs" />
+    <Compile Include="DataContracts\PhotoTake_Detail.cs" />
+    <Compile Include="DataContracts\List_PhotoTake.cs" />
+    <Compile Include="DataContracts\CommonInformation.cs" />
+    <Compile Include="DataContracts\CommonOutputT.cs" />
+    <Compile Include="DataContracts\CommonOutput.cs" />
+    <Compile Include="DataContracts\LoginAccess.cs" />
+    <Compile Include="DataContracts\PageRows.cs" />
+    <Compile Include="Business.svc.cs">
+      <DependentUpon>Business.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IAssistant.cs" />
+    <Compile Include="IBusiness.cs" />
+    <Compile Include="IAgriculture.cs" />
+    <Compile Include="Map.svc.cs">
+      <DependentUpon>Map.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IMap.cs" />
+    <Compile Include="Methods\ExcelAnalysis.cs" />
+    <Compile Include="Methods\ExcelHelper.cs" />
+    <Compile Include="Methods\CommonMethod.cs" />
+    <Compile Include="Population.svc.cs">
+      <DependentUpon>Population.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Dynamic.svc.cs">
+      <DependentUpon>Dynamic.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IPopulation.cs" />
+    <Compile Include="IDynamic.cs" />
+    <Compile Include="ISystem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Agriculture.svc.cs">
+      <DependentUpon>Agriculture.svc</DependentUpon>
+    </Compile>
+    <Compile Include="System.svc.cs">
+      <DependentUpon>System.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\MLDSService.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MLDSData\MLDSData.csproj">
+      <Project>{19b5dc2e-16cb-4953-9250-32587784cc32}</Project>
+      <Name>MLDSData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52467</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8002/MLDSService</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
